@@ -4,7 +4,7 @@ import com.futurebank.authservice.model.Beneficiary;
 import com.futurebank.authservice.service.BeneficiaryService;
 import com.futurebank.authservice.service.UserService; // Make sure you have this service
 
-import org.apache.catalina.User;
+import com.futurebank.authservice.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
