@@ -68,7 +68,7 @@ public class BeneficiaryController {
             User user = (User) userService.findByUsername(userDetails.getUsername())
                         .orElseThrow(() -> new IllegalStateException("User not found for username: " + userDetails.getUsername()));
             
-            return user.get; // Make sure your User entity has a getId() method that returns the user ID
+            return user.getUserId(); // Make sure your User entity has a getId() method that returns the user ID
         }
         return null; // or throw an appropriate exception if the user is not found or not logged in
     }
